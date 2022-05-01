@@ -10,7 +10,7 @@ def key_recorder(key):
         dev.write(b'1')
         dev.close()
         pygame.mixer.init()
-        pygame.mixer.music.load('soung.mp3')
+        pygame.mixer.music.load('song.mp3')
         pygame.mixer.music.play()
 with Listener(on_press=key_recorder) as l:
     l.join()
